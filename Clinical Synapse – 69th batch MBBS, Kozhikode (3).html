@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Clinical Synapse – 69th batch MBBS, Kozhikode</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700&display=swap">
+<style>
+:root{--bg:#F6F4FB;--surface:#fff;--ink:#221F4A;--mute:#625F8A;--line:#DAD6EE;--h:#2F2B78;--on:#fff;--e:#B8386F;--eT:#FBE6EF;--hT:#E8E6F8;--t0:#E6E4F7;--t1:#FBE5EF;--t2:#EEE3F6;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14122B;--surface:#1E1B3D;--ink:#EEEBFB;--mute:#A6A3CE;--line:#38346B;--h:#ABA7FB;--on:#14122B;--e:#F28FBB;--eT:#3B1F3A;--hT:#2A2762;--t0:#2A2762;--t1:#432040;--t2:#36235A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#14122B;--surface:#1E1B3D;--ink:#EEEBFB;--mute:#A6A3CE;--line:#38346B;--h:#ABA7FB;--on:#14122B;--e:#F28FBB;--eT:#3B1F3A;--hT:#2A2762;--t0:#2A2762;--t1:#432040;--t2:#36235A;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 'Atkinson Hyperlegible',system-ui,sans-serif;-webkit-text-size-adjust:100%}
+h1,h2,h4{font-family:'Bricolage Grotesque','Atkinson Hyperlegible',system-ui,sans-serif;margin:0;line-height:1.15}
+.wrap{max-width:880px;margin:0 auto;padding:0 18px 120px}
+header{padding:22px 0 4px}
+.brand{display:flex;gap:12px;align-items:center}
+.brand svg{width:44px;height:44px;flex:none}
+h1{font-size:clamp(26px,7.5vw,38px);letter-spacing:-.02em}
+.tag{margin:2px 0 0;color:var(--mute);font-size:14px}
+.ecg{display:block;width:100%;height:34px;margin-top:12px;animation:trace 1.8s ease-out both}
+.ecg path{fill:none;stroke:var(--e);stroke-width:2;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+@keyframes trace{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0)}}
+@media(prefers-reduced-motion:reduce){.ecg{animation:none}}
+.lead{font-size:18px;margin:18px 0 16px;max-width:52ch}
+.note{margin:12px 0;padding:10px 14px;border-radius:10px;background:var(--hT);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(min-width:640px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:900px){.grid{grid-template-columns:repeat(4,1fr)}}
+.tile{display:flex;flex-direction:column;min-height:116px;padding:14px;border-radius:16px;background:var(--t);color:inherit;text-decoration:none;border:1px solid transparent}
+.tile:hover{border-color:var(--h)}
+.t0{--t:var(--t0)}.t1{--t:var(--t1)}.t2{--t:var(--t2)}
+.tn{font:700 18px/1.15 'Bricolage Grotesque',system-ui,sans-serif}
+.tf{font-size:13px;color:var(--mute);margin-top:2px}
+.tc{margin-top:auto;padding-top:10px;font-size:14px;font-weight:700;color:var(--h)}
+.fine{margin:22px 0 0;color:var(--mute);font-size:13px}
+.back{display:inline-flex;align-items:center;min-height:44px;color:var(--h);font-weight:700;text-decoration:none;margin-top:6px}
+h2{font-size:clamp(26px,7vw,34px);letter-spacing:-.01em}
+.sub{margin:4px 0 14px;color:var(--mute)}
+input,textarea,select{width:100%;font:inherit;color:inherit;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 12px;min-height:46px}
+::placeholder{color:var(--mute);opacity:.8}
+textarea{resize:vertical}
+input[type=checkbox]{width:22px;height:22px;min-height:0;flex:none;accent-color:var(--h)}
+.case{border:1px solid var(--line);background:var(--surface);border-radius:14px;margin-top:10px}
+.case.open{border-color:var(--h)}
+.chead{display:block;width:100%;padding:14px 16px;background:none;border:0;color:inherit;font:inherit;text-align:left;cursor:pointer}
+.ct{display:block;font:700 18px/1.25 'Bricolage Grotesque',system-ui,sans-serif}
+.cm{display:block;margin-top:3px;font-size:13px;color:var(--mute)}
+.cl{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:8px;font-size:15px}
+.cbody{padding:0 16px 16px}
+.sec h4{font-size:15px;color:var(--e);margin:14px 0 2px}
+.sec p{margin:0;white-space:pre-wrap;overflow-wrap:anywhere}
+.empty{margin-top:18px;padding:28px 16px;text-align:center;color:var(--mute);border:1px dashed var(--line);border-radius:14px}
+.btn{min-height:48px;padding:0 20px;border-radius:12px;border:1px solid var(--h);background:none;color:var(--h);font:700 16px 'Atkinson Hyperlegible',system-ui,sans-serif;cursor:pointer}
+.btn.p,.fab{background:var(--h);color:var(--on)}
+.btn:disabled{opacity:.6}
+.del{margin-top:16px;min-height:44px;padding:0 14px;border-radius:10px;border:1px solid var(--line);background:none;color:var(--ink);font:inherit;cursor:pointer}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));min-height:52px;padding:0 22px;border:0;border-radius:26px;font:700 16px 'Atkinson Hyperlegible',system-ui,sans-serif;box-shadow:0 6px 18px rgba(0,0,0,.28);cursor:pointer}
+.sheet{position:fixed;inset:0;z-index:20;overflow-y:auto;background:var(--bg);padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}
+.sin{max-width:640px;margin:0 auto;padding:18px 18px 40px}
+.priv{margin-top:12px;padding:12px 14px;border-radius:12px;background:var(--eT);font-size:14px}
+.fld{margin-top:14px}
+.fld label{display:block;font-weight:700;margin-bottom:5px}
+.ok{display:flex;gap:10px;align-items:flex-start;margin-top:18px}
+.err{min-height:1.4em;margin-top:10px;color:var(--e);font-weight:700}
+.row{display:flex;gap:10px;margin-top:10px}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(84px + env(safe-area-inset-bottom,0px));z-index:30;max-width:90vw;padding:12px 16px;border-radius:12px;background:var(--ink);color:var(--bg);font-size:14px}
+:focus-visible{outline:3px solid var(--e);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="brand">
+    <svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="11" cy="31" r="7" fill="var(--h)"/><circle cx="33" cy="13" r="7" fill="var(--e)"/><path d="M16 27C23 24 21 20 28 17" fill="none" stroke="var(--ink)" stroke-width="2.5" stroke-linecap="round"/></svg>
+    <div><h1>Clinical Synapse</h1><p class="tag">69th batch MBBS, Government Medical College Kozhikode</p></div>
+  </div>
+  <svg class="ecg" viewBox="0 0 400 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 24H110L118 24L124 16L130 24H146L152 30L160 3L168 37L174 24H190L198 18L208 24H400"/></svg>
+</header>
+<main id="app"></main>
+</div>
+<script>
+// Edit this list to add or rename postings: [url-name, tile title, small subtitle]
+const D=[
+ ['medicine','Medicine','General Medicine'],
+ ['surgery','Surgery','General Surgery'],
+ ['obg','OBG','Obstetrics and Gynaecology'],
+ ['paediatrics','Paediatrics',''],
+ ['orthopaedics','Orthopaedics',''],
+ ['ent','ENT','Otorhinolaryngology'],
+ ['ophthalmology','Ophthalmology',''],
+ ['psychiatry','Psychiatry',''],
+ ['dermatology','Dermatology','Skin and venereology'],
+ ['anaesthesiology','Anaesthesiology',''],
+ ['radiodiagnosis','Radiodiagnosis',''],
+ ['casualty','Casualty','Emergency medicine'],
+ ['community-medicine','Community Medicine','Field and family visits'],
+ ['other','Other postings','Anything else']
+];
+const $=s=>document.querySelector(s),app=$('#app');
+let db,uid,canPost=false,admin=false,docs=new Map(),st='load',q='',armed=null,saving=false,tt;
+const opened=new Set();
+const cur=()=>D.find(d=>d[0]===location.hash.slice(1));
+const all=()=>[...docs].flatMap(([u,a])=>a.map(c=>({...c,uid:u}))).sort((a,b)=>b.ts-a.ts);
+const fmt=t=>new Date(t).toLocaleDateString('en-IN',{day:'numeric',month:'short'});
+const ls=(k,v)=>{try{return v===undefined?(localStorage.getItem(k)||''):localStorage.setItem(k,v)}catch(e){return ''}};
+function h(t,a,...k){const e=document.createElement(t);for(const n in a||{}){const v=a[n];if(n==='class')e.className=v;else if(n.startsWith('on'))e.addEventListener(n.slice(2),v);else if(v!==false&&v!=null)e.setAttribute(n,v===true?'':v)}for(const c of k.flat())if(c!=null&&c!==false)e.append(c);return e}
+function toast(m){clearTimeout(tt);let t=$('.toast');if(!t){t=h('div',{class:'toast',role:'status'});document.body.append(t)}t.textContent=m;t.hidden=false;tt=setTimeout(()=>{t.hidden=true},3500)}
+const MSG={load:'Loading cases…',slow:'Still connecting. Cases shown may be out of date.',nodb:'Shared cases need a signed-in Claude view. Open the batch link in the Claude app and sign in.',error:'Couldn’t load cases right now. Reload the page to try again.'};
+const sub=d=>{const n=all().filter(c=>c.dept===d[0]).length;return(d[2]?d[2]+', ':'')+n+(n===1?' case':' cases')};
+
+function render(){
+  const b=MSG[st]&&h('div',{class:'note',role:'status'},MSG[st]);
+  app.replaceChildren(...[b,cur()?deptView(cur()):homeView()].filter(Boolean));
+}
+function homeView(){
+  const a=all();
+  return h('section',{},
+    h('p',{class:'lead'},'Pick a posting to read what other subgroups saw, or share a case from yours.'),
+    h('div',{class:'grid'},D.map((d,i)=>{const n=a.filter(c=>c.dept===d[0]).length;
+      return h('a',{class:'tile t'+(i%3),href:'#'+d[0]},h('span',{class:'tn'},d[1]),h('span',{class:'tf'},d[2]),h('span',{class:'tc'},st==='ok'?n+(n===1?' case':' cases'):'…'))})),
+    h('p',{class:'fine'},'For learning only. Never include anything that could identify a patient.'),
+    h('button',{class:'fab',onclick:()=>sheet()},'Share a case'));
+}
+function deptView(d){
+  return h('section',{},
+    h('a',{class:'back',href:'#'},'‹ All postings'),
+    h('h2',{},d[1]),
+    h('p',{class:'sub',id:'sub'},st==='ok'?sub(d):''),
+    h('input',{type:'search',placeholder:'Search '+d[1]+' cases','aria-label':'Search cases',value:q,oninput:e=>{q=e.target.value;list()}}),
+    h('div',{id:'list'},items(d)),
+    h('button',{class:'fab',onclick:()=>sheet(d)},'Share a case'));
+}
+function list(){const d=cur(),L=$('#list');if(!d||!L)return;L.replaceChildren(...items(d));$('#sub').textContent=st==='ok'?sub(d):''}
+function items(d){
+  const t=q.trim().toLowerCase(),
+    a=all().filter(c=>c.dept===d[0]&&(!t||[c.title,c.hx,c.ix,c.dx,c.learn,c.name].join(' ').toLowerCase().includes(t)));
+  if(!a.length)return st==='ok'?[h('div',{class:'empty'},t?'No cases match your search.':'No cases here yet. Be the first to share one from your posting.')]:[];
+  return a.map(card);
+}
+function card(c){
+  const o=opened.has(c.id),sec=(l,v)=>v&&h('div',{class:'sec'},h('h4',{},l),h('p',{},v));
+  return h('article',{class:'case'+(o?' open':'')},
+    h('button',{class:'chead','aria-expanded':String(o),onclick:()=>{o?opened.delete(c.id):opened.add(c.id);list()}},
+      h('span',{class:'ct'},c.title),
+      h('span',{class:'cm'},[c.agesex,c.grp&&'subgroup '+c.grp,'by '+c.name,c.ts&&fmt(c.ts)].filter(Boolean).join(', ')),
+      !o&&c.learn&&h('span',{class:'cl'},c.learn)),
+    o&&h('div',{class:'cbody'},
+      sec('Presentation',c.hx),sec('Investigations',c.ix),sec('Diagnosis and differentials',c.dx),sec('Observations and learning points',c.learn),
+      (c.uid===uid||admin)&&h('button',{class:'del',onclick:()=>del(c)},armed===c.id?'Tap again to delete':'Delete this case')));
+}
+async function del(c){
+  if(armed!==c.id){armed=c.id;list();setTimeout(()=>{if(armed===c.id){armed=null;list()}},3500);return}
+  armed=null;
+  try{await db.doc('cases/'+c.uid).set({items:(docs.get(c.uid)||[]).filter(x=>x.id!==c.id)});opened.delete(c.id)}
+  catch(e){toast('Couldn’t delete. Try again.');list()}
+}
+function sheet(d){
+  if(st!=='ok'){toast('Cases are still loading. Try again in a moment.');return}
+  if(!canPost){toast(uid?'You can read cases, but sharing needs Contributor access. Ask the batch admin.':'Sign in to Claude to share a case.');return}
+  const f={},ok=h('input',{type:'checkbox',id:'f_ok'}),err=h('div',{class:'err',role:'alert'}),
+    go=h('button',{class:'btn p',onclick:()=>submit()},'Share case'),
+    fld=(k,l,ph,rows,max)=>{f[k]=rows?h('textarea',{id:'f_'+k,rows,maxlength:3000,placeholder:ph}):h('input',{id:'f_'+k,maxlength:max||120,placeholder:ph});return h('div',{class:'fld'},h('label',{for:'f_'+k},l),f[k])};
+  f.dept=h('select',{id:'f_dept'},!d&&h('option',{value:''},'Choose a posting'),D.map(x=>h('option',{value:x[0],selected:d&&d[0]===x[0]},x[1])));
+  const el=h('div',{class:'sheet',role:'dialog','aria-modal':'true','aria-label':'Share a case'},
+    h('div',{class:'sin'},
+      h('h2',{},'Share a case'),
+      h('div',{class:'priv'},'Keep it anonymous: no patient name, hospital number, phone, address or face photos. Write “58-year-old man”, not who he is.'),
+      h('div',{class:'fld'},h('label',{for:'f_dept'},'Posting'),f.dept),
+      fld('title','Case title or diagnosis','e.g. Rheumatic mitral stenosis with atrial fibrillation'),
+      fld('agesex','Age and sex','e.g. 45 M',0,20),
+      fld('hx','Presentation: history and examination','Main complaints, key history, and what you found on examination',5),
+      fld('ix','Investigations','Labs, ECG, imaging, anything you saw',3),
+      fld('dx','Final diagnosis and differentials','What was it, and what else could it have been?',2),
+      fld('learn','Your observations and learning points','What stood out? What would you tell a batchmate who missed this case?',4),
+      fld('name','Your name','',0,40),
+      fld('grp','Your posting subgroup','e.g. B3',0,10),
+      h('label',{class:'ok'},ok,h('span',{},'I confirm this case has no details that could identify the patient.')),
+      err,
+      h('div',{class:'row'},go,h('button',{class:'btn',onclick:()=>el.remove()},'Cancel'))));
+  f.name.value=ls('cs_name');f.grp.value=ls('cs_grp');
+  document.body.append(el);
+  async function submit(){
+    const v=k=>f[k].value.trim();
+    if(!f.dept.value||!v('title')||!v('hx')||!v('learn')||!v('name')){err.textContent='Please fill in the posting, title, presentation, observations and your name.';return}
+    if(!ok.checked){err.textContent='Please confirm the case has no patient-identifying details.';return}
+    if(saving)return;
+    const c={id:Date.now().toString(36)+Math.random().toString(36).slice(2,6),ts:Date.now(),dept:f.dept.value,title:v('title'),agesex:v('agesex'),hx:v('hx'),ix:v('ix'),dx:v('dx'),learn:v('learn'),name:v('name'),grp:v('grp')},
+      next=[c,...(docs.get(uid)||[])];
+    if(JSON.stringify(next).length>230000){err.textContent='You’ve used up your storage. Delete an older case first.';return}
+    saving=true;go.disabled=true;err.textContent='';
+    try{await db.doc('cases/'+uid).set({items:next});ls('cs_name',c.name);ls('cs_grp',c.grp);opened.add(c.id);el.remove();location.hash='#'+c.dept;toast('Shared with the batch.')}
+    catch(e){err.textContent=e&&e.code==='invalid_argument'?'Sharing needs Contributor access. Ask the batch admin.':'Couldn’t save. Check your connection and try again.'}
+    saving=false;go.disabled=false;
+  }
+}
+addEventListener('hashchange',()=>{q='';render();scrollTo(0,0)});
+addEventListener('keydown',e=>{if(e.key==='Escape')$('.sheet')?.remove()});
+render();
+(async()=>{
+  const t=setTimeout(()=>{if(st==='load'){st='slow';render()}},10000);
+  try{
+    const c=window.claude;db=c?await c.use('db'):null;
+    if(!db){clearTimeout(t);st='nodb';render();return}
+    const u=await c.use('user');
+    if(u){uid=await u.id();admin=!!(await u.canEdit());canPost=!!uid&&(await u.can('data.write'))!==false}
+    db.collection('cases').onSnapshot(s=>{
+      docs=new Map(s.docs.map(d=>{const i=(d.data()||{}).items;return[d.id,Array.isArray(i)?i.filter(x=>x&&x.id):[]]}));
+      clearTimeout(t);const was=st;st='ok';
+      if(was!=='ok'||!cur())render();else list();
+    },()=>{clearTimeout(t);st='error';render()});
+  }catch(e){clearTimeout(t);st='error';render()}
+})();
+</script>
+</body>
+</html>
